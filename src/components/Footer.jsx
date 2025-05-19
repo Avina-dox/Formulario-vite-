@@ -17,7 +17,7 @@ const Footer = () => (
                     href="#"
                     className="hover:text-gray-300 transition-colors"
                 >
-                    Contacto
+                    Contacto 
                 </a>
             </div>
         </div>
