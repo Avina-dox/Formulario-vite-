@@ -10,7 +10,8 @@ const FormularioRecepcion = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    // Cambia la fuente del documento al enviar el formulario
+    document.body.style.fontFamily = "'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif";
     try {
       const response = await axios.post('http://localhost:5000/api/recepcion', {
         nombre: equipo,
