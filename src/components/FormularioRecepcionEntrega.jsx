@@ -1,33 +1,40 @@
 import { useState } from 'react';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+import { useEffect } from 'react';
 
 
 const FormularioRecepcionEntrega = () => {
-  const [formData, setFormData] = useState({
-    equipo: '',
-    numeroSerie: '',
-    estado: 'entregar', // 'entregar' o 'recibir'
-    fechaEntrega: '',
-    fechaRecepcion: '',
-    mantenimientoDescripcion: '',
-    observaciones: '',
-    firmaResponsable: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+    // Establece el fondo del formulario usando Tailwind y estilos en línea
+    const [formData, setFormData] = useState({
+        equipo: '',
+        numeroSerie: '',
+        estado: 'entregar', // 'entregar' o 'recibir'
+        fechaEntrega: '',
+        fechaRecepcion: '',
+        mantenimientoDescripcion: '',
+        observaciones: '',
+        firmaResponsable: '',
     });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes procesar los datos o enviarlos a un servidor
-    console.log('Datos del formulario:', formData);
-  };
+   
+  
 
-   return (
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aquí puedes procesar los datos o enviarlos a un servidor
+        console.log('Datos del formulario:', formData);
+    };
+
+    return (
         <form className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md space-y-8">
             <h2 className="text-2xl font-bold mb-4">Datos Generales</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -331,14 +338,23 @@ const FormularioRecepcionEntrega = () => {
                 </div>
             </section>
 
-            <div className="flex justify-end mt-6">
-                <button
+            <div className="flex justify-end mt-6 space-x-4">
+                 <button
                     type="submit"
                     className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 font-semibold"
                 >
                     Guardar
                 </button>
+            
+                <button
+                    type="button"
+                    className="bg-green-600 text-white px-6 py-2 rounded hover:bg-blue-700 font-semibold"
+                >
+                    Guardar en PDF
+                </button>
             </div>
+            
+           
         </form>
     );
 };
