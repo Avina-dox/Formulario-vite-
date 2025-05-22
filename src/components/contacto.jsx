@@ -1,13 +1,13 @@
 import React from "react";
 
 const Contacto = () => (
-    <div>
-        <h2 className="text-2xl font-bold mb-4">Contacto</h2>
+    <div class ="flex flex-col items-center justify-center min-h-screen  p-4 ">
+        <h2 className="text-4xl font-extrabold mb-2 drop-shadow">Contacto</h2>
         <p className="mb-4">
             Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
         </p>
-        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <div className="mb-4">
+        <form className="bg-gradient-to-br from-white/80 via-purple-100/80 to-gray-100/80 p-10 rounded-3xl shadow-2xl border border-purple-200 backdrop-blur-md flex flex-col items-center max-w-md mx-auto">
+            <div className="">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="nombre">
                     Nombre
                 </label>

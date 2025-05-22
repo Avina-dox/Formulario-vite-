@@ -104,7 +104,7 @@ export default function CheckListAlcancesIncidentes() {
     };
 
     return (
-        <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow">
+        <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow ">
             <h1 className="text-2xl font-bold mb-2 text-blue-800">Checklist de Alcances e Incidentes</h1>
             <p className="mb-4 text-gray-700">
                 <span className="font-semibold">Objetivo:</span> Establecer un listado de verificación para identificar, clasificar y evaluar el alcance de incidentes y fallos tecnológicos que puedan afectar la operación de los sistemas de información, con el fin de garantizar una respuesta efectiva.

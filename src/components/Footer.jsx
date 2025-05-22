@@ -1,24 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
     <footer className="bg-gray-800 text-white py-6 mt-8">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <span className="text-sm mb-2 md:mb-0">
-                © {new Date().getFullYear()} Formulario Recepción. Todos los derechos reservados.
+                © {new Date().getFullYear()} Dasavena. 2025.
             </span>
             <div className="flex space-x-4">
-                <a
-                    href="#"
+                <Link
+                    to="/"
                     className="hover:text-gray-300 transition-colors"
                 >
                     Aviso de Privacidad
-                </a>
-                <a
-                    href="#"
+                </Link>
+                <Link
+                    to="/"
                     className="hover:text-gray-300 transition-colors"
                 >
                     Contacto 
-                </a>
+                </Link>
             </div>
         </div>
     </footer>
