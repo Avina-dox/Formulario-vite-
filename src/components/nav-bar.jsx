@@ -12,7 +12,7 @@ const NavBar = () => (
                     alt="Dasavena Logo"
                     className="w-10 h-10 object-contain rounded-full shadow-md bg-white"
                 />
-                <span className="text-purple-100 font-extrabold text-2xl tracking-widest drop-shadow-lg select-none">
+                <span className="text-purple-100 font-serif text-3xl tracking-widest drop-shadow-lg select-none ">
                     Dasavena TI
                 </span>
             </div>
