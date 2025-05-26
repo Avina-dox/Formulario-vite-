@@ -12,6 +12,7 @@ import OG from './components/OG';
 import Acerca from './components/Acerca';
 import Configuracion from './components/Configuracion';
 import Aviso from './components/Aviso';
+import CalendarioTI from './components/CalendarioTI';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/acerca" element={<Acerca />} />
         <Route path="/configuracion" element={<Configuracion />} />
         <Route path="/Aviso" element={<Aviso />} />
+        <Route path="/CalendarioTI" element={<CalendarioTI />} />
       </Routes>
       <Footer />
       <OG />

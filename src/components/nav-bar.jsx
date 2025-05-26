@@ -71,11 +71,12 @@ const NavBar = () => (
                 </li>
                 <li>
                     <Link
-                        to="/Contacto"
+                        to="/CalendarioTI"
                         className="relative text-purple-200 hover:text-white transition-colors duration-200 font-semibold px-3 py-1 rounded-lg hover:bg-purple-700/30 focus:outline-none focus:ring-2 focus:ring-purple-400"
                     >
                         <span className="before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-purple-400 before:transition-all before:duration-300 hover:before:w-full">
-                            Contacto
+                            Calendario
+
                         </span>
                     </Link>
                 </li>

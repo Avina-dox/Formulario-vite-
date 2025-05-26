@@ -105,7 +105,7 @@ export default function CheckListAlcancesIncidentes() {
 
     return (
         <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow ">
-            <h1 className="text-2xl font-bold mb-2 text-blue-800">Checklist de Alcances e Incidentes</h1>
+            <h1 className="text-2xl font-bold mb-2 text-purple-800">Checklist de Alcances e Incidentes</h1>
             <p className="mb-4 text-gray-700">
                 <span className="font-semibold">Objetivo:</span> Establecer un listado de verificación para identificar, clasificar y evaluar el alcance de incidentes y fallos tecnológicos que puedan afectar la operación de los sistemas de información, con el fin de garantizar una respuesta efectiva.
             </p>
@@ -113,10 +113,10 @@ export default function CheckListAlcancesIncidentes() {
                 <span className="font-semibold">Alcance:</span> Aplica a todos los incidentes relacionados con la infraestructura tecnológica de la organización, incluyendo software, hardware, red, base de datos y servicios en la nube.
             </p>
 
-            <h2 className="text-lg font-semibold mt-6 mb-2 text-blue-700">Clasificación de incidencias</h2>
+            <h2 className="text-lg font-semibold mt-6 mb-2 text-black-700">Clasificación de incidencias</h2>
             <table className="w-full mb-6 border text-sm">
                 <thead>
-                    <tr className="bg-blue-100">
+                    <tr className="bg-purple-100">
                         <th className="border px-2 py-1">Nivel de Severidad</th>
                         <th className="border px-2 py-1">Descripción</th>
                         <th className="border px-2 py-1">Ejemplo</th>
@@ -133,17 +133,17 @@ export default function CheckListAlcancesIncidentes() {
                 </tbody>
             </table>
 
-            <h2 className="text-lg font-semibold mb-2 text-blue-700">Checklist de detección y respuesta</h2>
+            <h2 className="text-lg font-semibold mb-2 text-purple-700">Checklist de detección y respuesta</h2>
             <div className="space-y-4">
                 {checklistItems.map((section, sectionIdx) => (
                     <div key={section.section}>
-                        <h3 className="font-semibold text-blue-600 mb-1">{section.section}</h3>
+                        <h3 className="font-semibold text-purple-600 mb-1">{section.section}</h3>
                         <ul className="space-y-1">
                             {section.items.map((item, itemIdx) => (
                                 <li key={item} className="flex items-center">
                                     <input
                                         type="checkbox"
-                                        className="mr-2 accent-blue-600"
+                                        className="mr-2 accent-purple-600"
                                         checked={!!checked[`${sectionIdx}-${itemIdx}`]}
                                         onChange={() => handleCheck(sectionIdx, itemIdx)}
                                     />
@@ -155,10 +155,10 @@ export default function CheckListAlcancesIncidentes() {
                 ))}
             </div>
 
-            <h2 className="text-lg font-semibold mt-6 mb-2 text-blue-700">Responsables</h2>
+            <h2 className="text-lg font-semibold mt-6 mb-2 text-purple-700">Responsables</h2>
             <table className="w-full border text-sm">
                 <thead>
-                    <tr className="bg-blue-100">
+                    <tr className="bg-purple-100">
                         <th className="border px-2 py-1">Rol</th>
                         <th className="border px-2 py-1">Función</th>
                     </tr>
