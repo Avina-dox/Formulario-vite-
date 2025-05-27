@@ -9,7 +9,7 @@ const menuItems = [
 ];
 
 const Configuracion = () => (
-    <div className="w-full max-w-sm mx-auto mt-10 bg-white rounded-lg shadow-lg mb-30">
+    <div className="w-full max-w-sm mx-auto mt-20 bg-white rounded-lg shadow-lg mb-30">
         <h2 className="text-2xl font-bold text-center py-4 border-b">Configuración</h2>
         <ul className="divide-y">
             {menuItems.map((item) => (

@@ -43,22 +43,23 @@ const Inicio = () => {
                 </button>
             </div>
             <div className="relative z-20">
-                <div className="bg-gradient-to-br from-white/80 via-purple-100/80 to-gray-100/80 p-10 rounded-3xl shadow-2xl border border-purple-200 backdrop-blur-md flex flex-col items-center max-w-md mx-auto">
+                <div className="bg-gradient-to-br from-white-80 via-purple-100-80 to-gray-100/80 p-20  rounded-3xl shadow-2xl border border-purple-200 backdrop-blur-md flex flex-col items-center max-w-md mx-auto">
                     <div className="mb-4">
                         <svg className="w-14 h-14 text-purple-400 drop-shadow-lg" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" />
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M12 8v8" stroke="#60a5fa" strokeWidth="2"/>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M12 8v8" stroke="#60a5fa" strokeWidth="2" />
                         </svg>
                     </div>
                     <h1 className="text-4xl font-extrabold text-purple-700 mb-2 drop-shadow">Bienvenido</h1>
                     <p className="text-purple-700 text-lg mb-4 text-center">Este es el inicio de tu aplicación.</p>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex flex gap-2 mt-2">
                         <span className="inline-block w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full animate-pulse"></span>
                         <span className="inline-block w-2 h-2 bg-purple-300 rounded-full animate-pulse"></span>
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };

@@ -30,8 +30,8 @@ export default function CalendarioTI() {
     return (
         <div className="min-h-screen bg-gradient-to-br to-purple-200 flex flex-col items-center py-10">
             <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl">
-                <h1 className="text-3xl font-bold text-purple-300 mb-6 text-center ">Calendario de Actividades TI</h1>
-                <h2 class="text-3x1 font-blod text-purple-400 mb-6 text-center">Calendario de Ti </h2>
+                <h1 className="text-3xl font-bold text-black mb-6 text-center ">Calendario de Actividades TI</h1>
+                <h2 class="text-3x1 font-blod text-gray-900/80 mb-10 text-center">Calendario de Ti </h2>
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                     <input
                         type="text"
